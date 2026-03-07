@@ -7,6 +7,11 @@ const sidebar = document.getElementById("sidebar");
 const filterToggle = document.getElementById("filterToggle");
 const closeFilter = document.getElementById("closeFilter");
 const overlay = document.getElementById("overlay");
+const searchInput = document.getElementById("searchInput");
+const sortSelect = document.getElementById("sortSelect");
+
+searchInput.addEventListener("input", filterItems);
+sortSelect.addEventListener("change", filterItems);
 
 priceRange.addEventListener("input", () => {
   priceValue.textContent = priceRange.value;
