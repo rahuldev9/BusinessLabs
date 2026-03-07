@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
+import { toast } from "sonner";
 type ProfileData = {
   name: string;
   email: string;
@@ -57,7 +57,7 @@ export default function ProfileForm() {
 
     localStorage.setItem("profile", JSON.stringify(profile));
 
-    alert("Profile saved successfully");
+    toast.success("Profile saved successfully");
   };
 
   // Skeleton Loader

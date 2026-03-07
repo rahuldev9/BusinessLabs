@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
-
+import { toast } from "sonner";
 type Profile = {
   name?: string;
   email?: string;
@@ -40,6 +40,7 @@ export default function PasswordForm() {
     if (profile.password) {
       if (oldPass !== profile.password) {
         setMsg("Old password is incorrect");
+        toast.error("Old password is incorrect");
         return;
       }
     }
@@ -47,6 +48,7 @@ export default function PasswordForm() {
     // Confirm match
     if (newPass !== confirm) {
       setMsg("Passwords do not match");
+      toast.error("Passwords do not match");
       return;
     }
 
