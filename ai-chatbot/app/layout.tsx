@@ -30,13 +30,11 @@ export const metadata: Metadata = {
     "website chatbot",
   ],
 
-  authors: [{ name: "Your Name" }],
-
   openGraph: {
     title: "AI ChatBot Assistant",
     description:
       "Smart AI chatbot built with Next.js for answering user questions and providing automated support.",
-    url: "https://yourwebsite.com",
+    url: "https://ai-chatbot-phi-azure-90.vercel.app",
     siteName: "AI ChatBot",
     images: [
       {
