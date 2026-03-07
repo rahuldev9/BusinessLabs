@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Product Filters</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Product Marketplace</h1>
+
+      <button id="filterToggle" class="filter-btn">Filter</button>
+    </header>
+
+    <div class="layout">
+      <!-- overlay for mobile -->
+
+      <div id="overlay" class="overlay"></div>
+
+      <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+          <h2>Filters</h2>
+          <button id="closeFilter" class="close-btn">✕</button>
+        </div>
+
+        <h3>Category</h3>
+
+        <label>
+          <input type="checkbox" class="category" value="electronics" />
+          Electronics
+        </label>
+
+        <label>
+          <input type="checkbox" class="category" value="furniture" />
+          Furniture
+        </label>
+
+        <label>
+          <input type="checkbox" class="category" value="clothing" />
+          Clothing
+        </label>
+
+        <label>
+          <input type="checkbox" class="category" value="sports" />
+          Sports
+        </label>
+
+        <label>
+          <input type="checkbox" class="category" value="books" />
+          Books
+        </label>
+
+        <label>
+          <input type="checkbox" class="category" value="appliances" />
+          Appliances
+        </label>
+
+        <h3>Max Price</h3>
+
+        <input type="range" id="priceRange" min="0" max="2000" value="2000" />
+        <p>Max: $<span id="priceValue">2000</span></p>
+
+        <h3>Location</h3>
+
+        <select id="location">
+          <option value="all">All</option>
+          <option value="USA">USA</option>
+          <option value="India">India</option>
+          <option value="UK">UK</option>
+          <option value="Canada">Canada</option>
+          <option value="Germany">Germany</option>
+          <option value="Japan">Japan</option>
+          <option value="Australia">Australia</option>
+          <option value="France">France</option>
+        </select>
+      </aside>
+
+      <main id="results" class="products"></main>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
