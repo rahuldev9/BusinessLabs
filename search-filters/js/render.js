@@ -15,16 +15,19 @@ function renderItems(data) {
     card.className = "card";
 
     card.innerHTML = `
-  <img src="${item.image || "https://via.placeholder.com/300"}" alt="${item.name}" />
+      <img src="${item.image || "https://via.placeholder.com/300"}" alt="${item.name}" />
 
-  <div class="card-body">
-    <h3>${item.name}</h3>
-    <p class="price">$${item.price}</p>
-    <p class="location">${item.location}</p>
-    <small class="category">${item.category}</small>
-  </div>
-`;
+      <div class="card-body">
+        <h3>${item.name}</h3>
+        <p class="price">$${item.price}</p>
+        <p class="location">${item.location}</p>
+        <small class="category">${item.category}</small>
+      </div>
+    `;
 
     resultsContainer.appendChild(card);
   });
 }
+
+/* render all products by default */
+renderItems(items);

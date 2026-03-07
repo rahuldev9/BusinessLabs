@@ -15,6 +15,16 @@
 
       <button id="filterToggle" class="filter-btn">Filter</button>
     </header>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search products..." />
+
+      <select id="sortSelect">
+        <option value="default">Sort By</option>
+        <option value="priceLow">Price: Low → High</option>
+        <option value="priceHigh">Price: High → Low</option>
+        <option value="name">Name (A → Z)</option>
+      </select>
+    </div>
 
     <div class="layout">
       <!-- overlay for mobile -->
@@ -22,11 +32,6 @@
       <div id="overlay" class="overlay"></div>
 
       <aside id="sidebar" class="sidebar">
-        <div class="sidebar-header">
-          <h2>Filters</h2>
-          <button id="closeFilter" class="close-btn">✕</button>
-        </div>
-
         <h3>Category</h3>
 
         <label>
