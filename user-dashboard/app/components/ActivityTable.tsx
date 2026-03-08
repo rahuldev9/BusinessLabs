@@ -41,7 +41,6 @@ export default function ActivityTable() {
           <div className="h-12 bg-gray-200 rounded-lg w-40"></div>
         </div>
 
-        {/* Desktop skeleton */}
         <div className="hidden md:block bg-white shadow-md rounded-xl p-4 space-y-3">
           <div className="h-10 bg-gray-200 rounded"></div>
           <div className="h-10 bg-gray-200 rounded"></div>
